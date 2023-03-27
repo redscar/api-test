@@ -1,0 +1,30 @@
+# Ignore compiled bootstrap file and vendor directory
+/bootstrap/compiled.php
+/vendor
+
+# Ignore log and coverage directories created by PHPUnit and Codeception
+/build/logs
+/build/coverage
+
+# Ignore test log file created by Codeception
+/app/tests/_log
+
+# Ignore Composer executable
+composer.phar
+
+# Ignore macOS-specific .DS_Store files
+.DS_Store
+
+# Ignore IDE-specific files and directories
+/.idea
+/_ide_helper.php
+
+# Ignore Laravel-specific directories
+/app/config/packages
+/public/packages
+
+# Ignore Node.js modules
+/node_modules
+
+# Ignore environment file
+.env

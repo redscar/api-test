@@ -163,7 +163,7 @@ points=10&description=Visited+the+casino+today
 #### Example Response
 
 `HTTP/1.1 200 OK Content-Type: application/json`
-```js
+```json
 {
     "message": "Points earned successfully",
     "data": {

@@ -20,14 +20,16 @@ To install the Casino Loyalty API, please follow these steps:
 
 `composer install`
 
-3.  Configure the database settings in the `src/config.php` file.
+3. Create the database structure. The Schema files are located in `db_structure`
+
+4.  Configure the database settings in the `src/config.php` file.
 
 
 `<?php  return [     'db_host' => 'localhost',     'db_name' => 'database_name',     'db_user' => 'database_user',     'db_pass' => 'database_password' ];`
 
-4.  Start the server.
+5.  Start the server.
 
-`php -S localhost:8000 -t public/`
+`php -S localhost:8080 -t public/`
 
 Routes
 ------

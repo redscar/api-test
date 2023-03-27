@@ -34,15 +34,20 @@ return [
 
 5.  Start the server.
 
-`php -S localhost:8080 -t public/`
+`composer start`
 
 Tests
 ------
 All tests are located within`tests/testRoutes.php`. To run the tests use the following command 
 `./vendor/bin/phpunit --verbose tests/testRoutes.php`
 
+_Tests will truncate the table as a way to test correctly._
+
 Routes
 ------
+
+All endpoints require sending the `X-Api-Key` header with the value `abc123` to work.
+
 
 `GET /users`
 ------------
@@ -74,7 +79,7 @@ Returns a JSON array of user objects with the following properties:
 #### Response
 
 `HTTP/1.1 200 OK Content-Type: application/json`
-```json
+```json lines
 [
   {
     "id": 21,
@@ -259,3 +264,7 @@ Example
 ### Response
 
 `HTTP/1.1 204 No Content`
+
+Postman
+-----
+By importing the [Loyalty API.postman_collection.json](Loyalty%20API.postman_collection.json) file into Postman all of the endpoints will populate for testing.

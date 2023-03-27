@@ -24,12 +24,9 @@ To install the Casino Loyalty API, please follow these steps:
 
 4.  Configure the database settings in the [src/config.php](src%2Fconfig.php) file.
 ```php
-return [
-    'db_host' => 'localhost',
-    'db_name' => 'database_name',
-    'db_user' => 'database_user',
-    'db_pass' => 'database_password'
-];
+DB::$user = 'apiUser';
+DB::$password = 'Password123#@!';
+DB::$dbName = 'loyalty_program';
 ```
 
 5.  Start the server.

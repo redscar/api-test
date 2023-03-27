@@ -23,17 +23,26 @@ To install the Casino Loyalty API, please follow these steps:
 3. Create the database structure. The Schema files are located in `db_structure`
 
 4.  Configure the database settings in the `src/config.php` file.
-
-
-`<?php  return [     'db_host' => 'localhost',     'db_name' => 'database_name',     'db_user' => 'database_user',     'db_pass' => 'database_password' ];`
+```php
+return [
+    'db_host' => 'localhost',
+    'db_name' => 'database_name',
+    'db_user' => 'database_user',
+    'db_pass' => 'database_password'
+];
+```
 
 5.  Start the server.
 
 `php -S localhost:8080 -t public/`
 
+Tests
+------
+All tests are located within`tests/testRoutes.php`. To run the tests use the following command 
+`./vendor/bin/phpunit --verbose tests/testRoutes.php`
+
 Routes
 ------
-Sure, here's an example README.md file for the `/users` endpoint:
 
 `GET /users`
 ------------

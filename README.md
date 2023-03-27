@@ -20,9 +20,9 @@ To install the Casino Loyalty API, please follow these steps:
 
 `composer install`
 
-3. Create the database structure. The Schema files are located in `db_structure`
+3. Create the database structure. The Schema files are located in [db_structure](db_structure)
 
-4.  Configure the database settings in the `src/config.php` file.
+4.  Configure the database settings in the [src/config.php](src%2Fconfig.php) file.
 ```php
 return [
     'db_host' => 'localhost',
@@ -38,7 +38,7 @@ return [
 
 Tests
 ------
-All tests are located within`tests/testRoutes.php`. To run the tests use the following command 
+All tests are located within [testRoutes.php](tests%2FtestRoutes.php). To run the tests use the following command 
 `./vendor/bin/phpunit --verbose tests/testRoutes.php`
 
 _Tests will truncate the table as a way to test correctly._
